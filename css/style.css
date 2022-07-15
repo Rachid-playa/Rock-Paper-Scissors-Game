@@ -1,0 +1,299 @@
+/* 
+Blue Gray BGcolor of body
+#647C90
+
+Ivory result box,borders
+#E2DED0
+
+Cool Gray, the options
+#4E4F50
+
+Gray ,BGcolor of the competitors
+#746C70 
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.swashIn {
+    -webkit-animation-name: swashIn;
+    animation-name: swashIn;
+  }
+  @-webkit-keyframes swashIn {
+    0% {
+      opacity: 0;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: scale(0, 0);
+      transform: scale(0, 0);
+    }
+  
+    90% {
+      opacity: 1;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: scale(0.9, 0.9);
+      transform: scale(0.9, 0.9);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+  }
+  @keyframes swashIn {
+    0% {
+      opacity: 0;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: scale(0, 0);
+      transform: scale(0, 0);
+    }
+  
+    90% {
+      opacity: 1;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: scale(0.9, 0.9);
+      transform: scale(0.9, 0.9);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+  }
+  
+
+body{
+    background-color: #00002b;
+
+}
+
+
+header{
+    /* background-color: #4E4F50; */
+    padding: 5px 70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p{
+    color: #E2DED0;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+main h1{
+    text-align: center;
+    font-size: 50px;
+    color: #E2DED0;
+}
+
+#vsicon{
+    height: 100px;
+    width: 70px;
+}
+
+#game{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#player{
+    display: flex;
+    flex-direction: row;
+    height: 593px;
+    width: 48%;
+    /* align-items: center; */
+    border: 1px #000 solid 1px;
+}
+
+#player #playericon{
+    height: 593px;
+    width: 45%;
+    border: 1px red solid 1px;
+}
+
+#player .options{
+    display: grid;
+    place-items: center;
+    /* border: 1px green 1px solid; */
+}
+
+#player .options button{
+    width: 90%;
+    height: 90px;
+    /* background-color: #E2DED0; */
+    background-color: transparent;
+    border-radius: 10px;
+    border: 0px;
+    /* border: 1px #000 solid 1px; */
+}
+
+#player .options button:hover{
+    width: 92%;
+    height: 92px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px #4E4F50 solid 2px;
+}
+
+#player .options img{
+    width: 88%;
+    height: 75px;
+}
+
+#player .answer{
+    height: 593px;
+    width: 30%;
+}
+
+#player .answer .result {
+    height: 150px;
+    width: 170px;
+    border-radius: 10px;
+    background-color: #E2DED0;
+    position:fixed;
+    right: 740px; top: 285px;
+    /* border: 1px #000 1px solid; */
+}
+#player .answer .result #result-player{
+    height: 130px;
+    width: 140px;
+    padding-left: 20px;
+    padding-top: 10px;
+    /* border: 1px #000 solid 1px; */
+}
+
+
+#player .answer .win{
+    height: 80px;
+    width: 110px;
+    position: fixed;
+    right: 760px; top: 100px;
+    border: 1px #E2DED0 1px solid;
+}
+
+#win-player{
+    height: 80px;
+    width: 110px;
+    background-color: #000;
+    border: 1px #000 1px solid;
+}
+
+#win-npc{
+    height: 80px;
+    width: 110px;
+    background-color: #000;
+    border: 1px #000 1px solid;
+}
+
+#lose-player{
+    height: 80px;
+    width: 110px;
+}
+
+#lose-npc{
+    height: 80px;
+    width: 110px;
+}
+
+#player .answer .lose{
+    height: 80px;
+    width: 110px;
+    position: fixed;
+    right: 760px; top: 545px;
+    border: 1px #000 1px solid;
+}
+
+
+#game p{
+    font-size: 40px;
+    color: #ffffff;
+    
+}
+
+#npc{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 593px;
+    width: 48%;
+    border: 1px #000 solid 1px;
+}
+
+#npc #npcicon{
+    height: 593px;
+    width: 45%;
+    border: 1px red solid 1px;
+}
+
+#npc .options{
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+    /* border: 1px green 1px solid; */
+}
+
+#npc .options button{
+    width: 90%;
+    height: 90px;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 10px;
+    /* border: 1px #000 solid 1px; */
+}
+
+#npc .options img{
+    width: 88%;
+    height: 75px;
+}
+
+#npc .answer{
+    height: 593px;
+    width: 30%;
+}
+
+#npc .answer .result{
+    height: 150px;
+    width: 170px;
+    border-radius: 10px;
+    background-color: #E2DED0;
+    position:fixed;
+    left: 740px; top: 285px;
+    /* border: 1px #000 1px solid; */
+}
+
+#npc .answer .result #result-npc{
+    height: 130px;
+    width: 140px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#npc .answer .win {
+    height: 80px;
+    width: 110px;
+    position: fixed;
+    left: 760px; top: 100px;
+    border: 1px #000 1px solid;
+}
+
+#npc .answer .lose{
+    height: 80px;
+    width: 110px;
+    position: fixed;
+    left: 760px; top: 545px;
+    border: 1px #000 1px solid;
+}
+
